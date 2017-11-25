@@ -21,3 +21,4 @@ Cho một cây nhị phân, print it vertically.
 > 3 8 <br/>
 > 7 <br/>
 > 9 <br/>
+![image BT](https://github.com/bigkizd/CompetitiveProgramming/blob/master/Data%20Structure/Hashing/image/print-binary-tree-in-vertical-order.png)
