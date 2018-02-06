@@ -17,3 +17,45 @@ Nếu X[m-1]==Y[n-1] thì <br/>
 L[ X[0..m-1], Y[0..n-1]) = 1 + L(X[0..m-2, Y[0..n-2) <br/>
 Ngược lại thì <br/>
 L ( X[0..m-1], Y[0..n-1] ) =max(L[X[0..m-2], y[0..n-1]), L(X[0..m-1], Y[0..n-2] ) <br/>
+
+## Intermediate Problems
+### 21. Maximum decimal value path in a binary matrix
+Cho ma trận vuông nhị phân[n*n]. Tìm giá trị lớn nhất trong đường đi từ top left to bottom right.
+We can move [i, j+1] or [i+1, j].
+#### Hướng dẫn
+```cpp
+int MaximumDecimalValue(int mat[][N], int n){
+  int dp[n][n];
+  memset(dp, 0, sizeof(dp));
+  if(mat[0][0]==1){
+    dp[0][0]=1;
+  }
+  // Tính cột đầu tiên của ma trận và lưu kết quả trong dp[0][i]
+  for(int i=1;i<n;i++){
+    if(mat[0][i]==1){
+      dp[0][i]= dp[0][i-1] + pow(2, i);
+    }
+    else
+    dp[0][i]=dp[0][i-1];
+  }
+  // Tính hàng đầu tiên của ma trận và lưu kết quả vào dp[i][0]
+  for(int i=1;i<n;i++){
+    if(mat[i][0]==1){
+      dp[i][0]=dp[i-1][0]+pow(2, i);
+    }
+    else
+    dp[i][0]=dp[i-1][0];
+  }
+  
+  for(int i=1;i<n;i++){
+    for(int j=1;j<n;j++){
+      if(mat[i][j]==1){
+        dp[i][j]=max(dp[i][j-1], dp[i-1][j])+pow(2, i+j);
+      }
+      else
+      dp[i][j]=max(dp[i][j], dp[i][j]);
+    }
+  }
+  return dp[n-1][n-1]; 
+}
+```
