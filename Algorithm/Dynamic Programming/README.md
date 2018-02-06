@@ -3,7 +3,7 @@
 ## Table of Contents
 
 ### Intermediate Problems
-21. [Maximum decimal value path in a binary matrix](#maximum-decimal-value-path-in-a-binary-matrix)
+21. [Maximum decimal value path in a binary matrix](#21.-maximum-decimal-value-path-in-a-binary-matrix)
 
 ## Longest Increasing Subsequence
 ### Bài toán:
