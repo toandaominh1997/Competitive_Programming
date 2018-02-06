@@ -22,6 +22,7 @@ L ( X[0..m-1], Y[0..n-1] ) =max(L[X[0..m-2], y[0..n-1]), L(X[0..m-1], Y[0..n-2] 
 ### 21. Maximum decimal value path in a binary matrix
 Cho ma trận vuông nhị phân[n*n]. Tìm giá trị lớn nhất trong đường đi từ top left to bottom right.
 We can move [i, j+1] or [i+1, j].
+
 #### Hướng dẫn
 ```cpp
 int MaximumDecimalValue(int mat[][N], int n){
@@ -59,3 +60,12 @@ int MaximumDecimalValue(int mat[][N], int n){
   return dp[n-1][n-1]; 
 }
 ```
+Time Complexity: O(n^2) <br/>
+Auxiliary space: O(n^2)
+### 22. Count Derangements (Permutation such that no element appears in its original position)
+A Derangement là hoán vị của n phần tử, mà không có phần tử nào xuất hiện ở vị trí ban đầu.
+Ví dụ, a derangement của {0, 1, 2, 3} là {2, 3, 1, 0}
+Cho số n, tìm tổng số derangements của bộ n phần tử.
+#### Hướng dẫn:
+countDer(n) = (n-1)*[countDer(n-1) +  countDer(n-2)]
+
