@@ -5,7 +5,7 @@
 ### Intermediate Problems
 21. [Maximum decimal value path in a binary matrix](#21-maximum-decimal-value-path-in-a-binary-matrix)
 22. [Count Derangements (Permutation such that no element appears in its original position)](#22-count-derangements-permutation-such-that-no-element-appears-in-its-original-position)
-23. [Dice Throw Problem](#23-Dice-throw-problem)
+23. [Dice Throw Problem](#23-dice-throw-problem)
 
 ## Longest Increasing Subsequence
 ### Bài toán:
