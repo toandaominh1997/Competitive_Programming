@@ -5,6 +5,7 @@
 ### Intermediate Problems
 21. [Maximum decimal value path in a binary matrix](#21-maximum-decimal-value-path-in-a-binary-matrix)
 22. [Count Derangements (Permutation such that no element appears in its original position)](#22-count-derangements-permutation-such-that-no-element-appears-in-its-original-position)
+23. [Dice Throw Problem](#23-Dice-throw-problem)
 
 ## Longest Increasing Subsequence
 ### Bài toán:
@@ -75,4 +76,23 @@ Ví dụ, a derangement của {0, 1, 2, 3} là {2, 3, 1, 0}
 Cho số n, tìm tổng số derangements của bộ n phần tử.
 #### Hướng dẫn:
 countDer(n) = (n-1)*[countDer(n-1) +  countDer(n-2)]
-
+### 23. Dice Throw Problem
+Cho n con xúc sắc có m mặt, đánh số từ 1 đến m, tìm số cách lấy ra tổng X. X là tổng giá trị trên mỗi mặt khi tất cả xúc sắc được tung.
+#### Hướng dẫn
+``` cpp
+//'n' dice and 'm' with m faces 
+int findWays(int m, int n, int x){
+  int table[n+1][x+1];
+  // Table entries for only one dice
+  for(int i=1;j<=m and j<=x;j++){
+    table[1][j]=1;
+  }
+  for(int i=2;i<=n;i++){
+    for(int j=1;j<=x;j++){
+      for(int k=1;k<=m and k<j;k++)
+      table[i][j]+=table[i-1][j-k];
+    }
+  }
+  return table[n][x]
+}
+```
