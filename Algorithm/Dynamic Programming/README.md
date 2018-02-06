@@ -3,7 +3,7 @@
 ## Table of Contents
 
 ### Intermediate Problems
-21. [Maximum decimal value path in a binary matrix](#maximum-decimal-value-path-in-a-binary-matrix)
+- [Maximum decimal value path in a binary matrix](#maximum-decimal-value-path-in-a-binary-matrix)
 
 ## Longest Increasing Subsequence
 ### Bài toán:
@@ -25,7 +25,7 @@ Ngược lại thì <br/>
 L ( X[0..m-1], Y[0..n-1] ) =max(L[X[0..m-2], y[0..n-1]), L(X[0..m-1], Y[0..n-2] ) <br/>
 
 ## Intermediate Problems
-### 21. Maximum decimal value path in a binary matrix
+### Maximum decimal value path in a binary matrix
 Cho ma trận vuông nhị phân[n*n]. Tìm giá trị lớn nhất trong đường đi từ top left to bottom right.
 We can move [i, j+1] or [i+1, j].
 
