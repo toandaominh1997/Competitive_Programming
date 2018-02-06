@@ -6,6 +6,7 @@
 21. [Maximum decimal value path in a binary matrix](#21-maximum-decimal-value-path-in-a-binary-matrix)
 22. [Count Derangements (Permutation such that no element appears in its original position)](#22-count-derangements-permutation-such-that-no-element-appears-in-its-original-position)
 23. [Dice Throw Problem](#23-dice-throw-problem)
+24. [Optimal Strategy for a game](#24-optima-strtegy-for-a-game)
 
 ## Longest Increasing Subsequence
 ### Bài toán:
@@ -96,3 +97,4 @@ int findWays(int m, int n, int x){
   return table[n][x]
 }
 ```
+### 24. Optimal Strategy for a game
