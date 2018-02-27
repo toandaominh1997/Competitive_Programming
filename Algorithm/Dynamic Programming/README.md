@@ -1,7 +1,8 @@
 # Dynamic Programming
 
 ## Table of Contents
-
+### Basic Problems
+51. [Subset with sum divisible by m](#51-subset-with-sum-divisible-by-m)
 ### Intermediate Problems
 21. [Maximum decimal value path in a binary matrix](#21-maximum-decimal-value-path-in-a-binary-matrix)
 22. [Count Derangements (Permutation such that no element appears in its original position)](#22-count-derangements-permutation-such-that-no-element-appears-in-its-original-position)
@@ -27,6 +28,12 @@ L[ X[0..m-1], Y[0..n-1]) = 1 + L(X[0..m-2, Y[0..n-2) <br/>
 Ngược lại thì <br/>
 L ( X[0..m-1], Y[0..n-1] ) =max(L[X[0..m-2], y[0..n-1]), L(X[0..m-1], Y[0..n-2] ) <br/>
 
+## Basic Problems
+### 51. Subset with sum divisible by m
+Cho tập các số nguyên dương không âm khác nhau, Xác định nếu có một tập con của tập đã cho mà tổng chia hết cho m.
+#### Hướng dấn
+Nếu n>m sẽ luôn luôn có tập con với tổng số chia hết cho m.
+Cho n<=m chúng ta tạo ra mảng boolean DP
 ## Intermediate Problems
 ### 21. Maximum decimal value path in a binary matrix
 Cho ma trận vuông nhị phân[n*n]. Tìm giá trị lớn nhất trong đường đi từ top left to bottom right.
