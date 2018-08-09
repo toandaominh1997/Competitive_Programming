@@ -32,7 +32,7 @@ int main(){
     if(ONLINE_JUDGE==0){
         freopen("in.txt", "r", stdin);
     }
-    bigizd();
+    bigkizd();
     cerr << "\nTime elapsed: " << 1000 * clock() / CLOCKS_PER_SEC << "ms\n";
     return 0;
 }
